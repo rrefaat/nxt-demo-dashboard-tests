@@ -42,4 +42,64 @@ pip install -r requirements.txt
 pip list
 ```
 
+# Framework Structure
+
+## Project Directory Structure
+```
+selenium_tests/
+  ├── tests/
+  │     ├── test_login.py
+  │     ├── test_add_attendee.py
+  │
+  ├── utils/
+  │     ├── config.py
+  │     ├── base_test.py
+  │
+  ├── reports/
+  ├── screenshots/
+  ├── requirements.txt
+  └── pytest.ini
+```
+
+---
+
+## 5. Initial Setup Steps
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
+
+2. Navigate to the project directory:
+```bash
+cd selenium_tests
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 6. Run Tests
+
+### Execute tests with pytest:
+```bash
+pytest --html=reports/report.html
+```
+
+### Run tests in parallel:
+```bash
+pytest -n 4 --html=reports/report.html
+```
+
+---
+
+## 7. Generate Reports
+
+- HTML report files will be generated in the `reports/` folder.
+- Screenshots will be stored in the `screenshots/` folder for debugging failed tests.
+
+
 
