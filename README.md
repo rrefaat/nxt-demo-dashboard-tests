@@ -94,6 +94,24 @@ pytest --html=reports/report.html
 pytest -n 4 --html=reports/report.html
 ```
 
+### Run tests in a directory
+
+```bash
+pytest tests/ --html=testing-report.html  --self-contained-html
+```
+
+### Run tests in a module
+
+```bash
+pytest tests/test_scenarios.py --html=testing-report.html  --self-contained-html
+```
+
+### Run tests by a specific test within a module
+
+```bash
+pytest tests/test_scenarios.py::TestScenarios::test_valid_login --html=testing-report.html --self-contained-html
+```
+
 ---
 
 ## 7. Generate Reports
